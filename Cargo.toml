@@ -47,11 +47,11 @@ crossterm_input = "0.5.0"
 open = "5.1.4"
 rand = "0.8.5"
 
-[target.'cfg(not(android))'.dependencies]
-cli-clipboard = "0.4.0"
-
 [target.'cfg(android)'.dependencies]
 terminal-clipboard = "0.4.1"
+
+[target.'not(cfg(android))'.dependencies]
+cli-clipboard = "0.4.0"
 
 [target.'cfg(windows)'.dependencies]
 winreg = "0.52.0"
