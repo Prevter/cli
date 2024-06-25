@@ -50,7 +50,7 @@ rand = "0.8.5"
 [target.'cfg(android)'.dependencies]
 terminal-clipboard = "0.4.1"
 
-[target.'not(cfg(android))'.dependencies]
+[target.'cfg(not(android))'.dependencies]
 cli-clipboard = "0.4.0"
 
 [target.'cfg(windows)'.dependencies]
